@@ -1,7 +1,7 @@
 # ⚙️ Enterprise Agentic AI OS & Cloud Architecture Engine
 
 ### 👨‍💻 Ganesh Prasad Bhandari
-**Senior GenAI & Agentic AI Architect** *16+ Years Total Enterprise Experience | 6.5+ Years Hardening Production AI Platforms* 📍 Worcester, MA | ✉️ [ganeshprasadbhan59@gmail.com](mailto:ganeshprasadbhan59@gmail.com) | 💼 [LinkedIn Profile](https://www.linkedin.com/in/ganesh-prasad-bhandari-b165b9187/)
+**Senior GenAI & Agentic AI Architect** *16+ Years Total Enterprise Experience | 6.5+ Years Hardening Production AI Platforms* 📍 Worcester, MA | 💼 [LinkedIn Profile](https://www.linkedin.com/in/ganesh-prasad-bhandari-b165b9187/)
 
 🚀 **Live Production Environment:** [careeragent-ai.duckdns.org](https://careeragent-ai.duckdns.org/)  
 🌐 **Interactive Web Portfolio:** [ganeshprasadbhandari.github.io](https://ganeshprasadbhandari.github.io/)
