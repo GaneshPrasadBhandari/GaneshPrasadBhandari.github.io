@@ -30,7 +30,7 @@
             color: var(--text-main);
             line-height: 1.6;
             overflow-x: hidden;
-            display: block; /* Ensure it overrides any hidden states */
+            display: block;
         }
 
         .container {
@@ -39,9 +39,9 @@
             padding: 0 1.5rem;
         }
 
-        /* Top Bar Navigation */
+        /* Top Navigation Bar */
         nav {
-            background: rgba(11, 24, 39, 0.8);
+            background: rgba(11, 24, 39, 0.85);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border-color);
             position: sticky;
@@ -61,6 +61,7 @@
             font-size: 1.2rem;
             color: #ffffff;
             letter-spacing: -0.02em;
+            font-family: monospace;
         }
 
         .nav-links {
@@ -79,7 +80,7 @@
             color: var(--accent-cyan);
         }
 
-        /* Hero Frame */
+        /* Hero Frame Header */
         header {
             position: relative;
             background: radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.15) 0%, rgba(10, 15, 29, 0) 70%);
@@ -146,7 +147,7 @@
         .meta-text {
             color: var(--text-muted);
             font-size: 1.1rem;
-            max-width: 900px;
+            max-width: 950px;
             margin-bottom: 2rem;
         }
 
@@ -204,7 +205,7 @@
             margin-top: 0.25rem;
         }
 
-        /* Section Layouts */
+        /* Layout Framework Sections */
         section {
             padding: 4rem 0;
             border-bottom: 1px solid var(--border-color);
@@ -238,7 +239,7 @@
         .card ul li { position: relative; padding-left: 1.25rem; margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem; }
         .card ul li::before { content: "→"; position: absolute; left: 0; color: var(--accent-cyan); }
 
-        /* YouTube Premiere Panel */
+        /* Architecture Masterclass Showcase Banner */
         .broadcast-panel {
             background: linear-gradient(135deg, #1e1b4b 0%, #070a13 100%);
             border: 1px solid var(--accent-purple);
@@ -259,6 +260,31 @@
             margin-bottom: 1rem;
         }
 
+        /* Video Showcase Responsive Layout Engine */
+        .video-grid-showcase {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .video-card-wrapper {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .video-card-wrapper h3 {
+            font-size: 1.05rem;
+            color: #ffffff;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -266,7 +292,8 @@
             overflow: hidden;
             border-radius: 8px;
             border: 1px solid var(--border-color);
-            margin: 1.5rem 0;
+            background: #000;
+            margin-bottom: 1rem;
         }
 
         .video-container iframe {
@@ -274,7 +301,13 @@
             top: 0; left: 0; width: 100%; height: 100%;
         }
 
-        /* 10-Layer Topography Blueprint */
+        .video-meta-tag {
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: var(--accent-cyan);
+        }
+
+        /* 10-Layer Topography Blueprint Shell */
         .blueprint-shell {
             background: var(--bg-terminal);
             border: 1px solid rgba(6, 182, 212, 0.3);
@@ -305,7 +338,7 @@
         .layer-node-meta { font-size: 0.75rem; color: var(--accent-green); }
         .layer-node-title { font-size: 1.05rem; font-weight: bold; color: #ffffff; margin: 0.25rem 0; }
 
-        /* Publications Styling */
+        /* Publications Styling Matrix */
         .pub-entry {
             border-bottom: 1px solid var(--border-color);
             padding: 1.5rem 0;
@@ -317,7 +350,7 @@
         .pub-details { font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0; }
         .pub-doi { font-family: monospace; font-size: 0.8rem; color: var(--accent-purple); }
 
-        /* Footer */
+        /* Footer System Marker */
         footer {
             padding: 3rem 0;
             background: var(--bg-terminal);
@@ -329,7 +362,7 @@
 
         @media(max-width: 968px) {
             h1 { font-size: 2.5rem; }
-            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .grid-2, .grid-3, .video-grid-showcase { grid-template-columns: 1fr; }
             .metrics-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media(max-width: 480px) {
@@ -341,13 +374,13 @@
 
     <nav>
         <div class="container nav-flex">
-            <div class="nav-brand">GPB // SYSTEM.OS</div>
+            <div class="nav-brand">GPB // ENGINE.ORCHESTRATOR</div>
             <div class="nav-links">
-                <a href="#philosophy">Philosophy</a>
-                <a href="#premiere">YouTube Masterclass</a>
-                <a href="#architecture">10-Layer Blueprint</a>
+                <a href="#philosophy">Design Core</a>
+                <a href="#streams">System Streams</a>
+                <a href="#architecture">10-Layer Topography</a>
                 <a href="#publications">Publications</a>
-                <a href="#academic">Education</a>
+                <a href="#academic">Education Matrix</a>
             </div>
         </div>
     </nav>
@@ -355,29 +388,29 @@
     <header>
         <div class="container">
             <div class="status-badge">
-                <span class="status-dot"></span> ORCID VERIFIED RUNTIME ACTIVE: 0009-0002-7308-4279
+                <span class="status-dot"></span> ORCID RUNTIME LAYER CONNECTED: 0009-0002-7308-4279
             </div>
             <h1>Ganesh Prasad Bhandari</h1>
-            <div class="subtitle">AI Solution Architect | 7+ Years AI/ML/GenAI Specialized Experience</div>
+            <div class="subtitle">AI Solution Architect | 7+ Years Dedicated AI/ML & GenAI Production Experience</div>
             
             <div class="hero-tags">
-                <span class="tag-badge">Agentic AI</span>
-                <span class="tag-badge">GraphRAG</span>
-                <span class="tag-badge">LLMOps Architecture</span>
+                <span class="tag-badge">Agentic AI OS</span>
+                <span class="tag-badge">GraphRAG Infrastructure</span>
+                <span class="tag-badge">LLMOps Pipelines</span>
                 <span class="tag-badge">Azure OpenAI & AWS Bedrock</span>
-                <span class="tag-badge">Responsible AI Governance</span>
+                <span class="tag-badge">Enterprise Compliance Governance</span>
             </div>
 
             <p class="meta-text">
-                Enterprise Solutions Architect with over 16 years of multi-tiered enterprise architecture engineering track record, focusing heavily on transitioning production-grade agentic frameworks, multi-agent orchestrations, and secure compliance meshes out of prototype sandbox cycles into hardened enterprise runtimes.
+                Enterprise Solution Architect with over 16 years of extensive industry history (specializing 7+ years in AI/ML and Generative AI platforms). Expert in operationalizing high-availability multi-agent workflows, GraphRAG environments, and secure model execution fabrics outside of simple prototype sandboxes into regulated, hardened business networks.
             </p>
 
             <div class="cmd-grid">
                 <div class="cmd-item"><i class="fas fa-envelope"></i> <a href="mailto:ganeshprasadbhan59@gmail.com">ganeshprasadbhan59@gmail.com</a></div>
-                <div class="cmd-item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ganesh-prasad-bhandari-b165b9187/" target="_blank">LinkedIn Connection Mesh</a></div>
-                <div class="cmd-item"><i class="fab fa-github"></i> <a href="https://github.com/GaneshPrasadBhandari" target="_blank">GitHub Repository Hub</a></div>
+                <div class="cmd-item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ganesh-prasad-bhandari-b165b9187/" target="_blank">LinkedIn Verification Mesh</a></div>
+                <div class="cmd-item"><i class="fab fa-github"></i> <a href="https://github.com/GaneshPrasadBhandari" target="_blank">GitHub Repository Infrastructure</a></div>
                 <div class="cmd-item"><i class="fab fa-youtube"></i> <a href="https://www.youtube.com/@AIINOVATEHUB" target="_blank">AIinovateHub Channel</a></div>
-                <div class="cmd-item"><i class="fas fa-file-contract"></i> <span>F-1 OPT EAD (July 14, 2026)</span></div>
+                <div class="cmd-item"><i class="fas fa-id-card"></i> <span>Work Authorization: F-1 OPT EAD (July 14, 2026)</span></div>
             </div>
 
             <div class="metrics-grid">
@@ -391,11 +424,11 @@
                 </div>
                 <div class="metric-card">
                     <div class="metric-value">6</div>
-                    <div class="metric-label">Zenodo DOI Whitepapers</div>
+                    <div class="metric-label">Zenodo DOI Research Whitepapers</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-value">95%+</div>
-                    <div class="metric-label">Production Accuracy Target</div>
+                    <div class="metric-label">Production Target Precision</div>
                 </div>
             </div>
         </div>
@@ -404,140 +437,190 @@
     <main class="container">
 
         <section id="philosophy">
-            <div class="section-title"><i class="fas fa-microchip"></i> Architectural Framework & Design Principles</div>
+            <div class="section-title"><i class="fas fa-network-wired"></i> Architectural Framework & Design Principles</div>
             <div class="grid-3">
                 <div class="card">
                     <h3>Systems-First Architecture</h3>
-                    <p>Start comprehensively with systemic production bounds, deterministic pipeline criteria, data pipelines, and workflow gates—never isolated benchmark-driven demo wrappers.</p>
+                    <p>Building from structural business boundaries, end-to-end data constraints, deterministic routing logic, and systemic policy hooks—never simple model-centric wrappers.</p>
                 </div>
                 <div class="card">
-                    <h3>Rigorous Governance</h3>
-                    <p>Enforcing integrated PII masking, Automated Compliance verification via Open Policy Agent (OPA), and structural Human-in-the-Loop tracking layers across production tasks.</p>
+                    <h3>Hardened Enterprise Governance</h3>
+                    <p>Enforcing mandatory Open Policy Agent (OPA) validation constraints, real-time PII anonymization routines, and human-in-the-loop validation barriers across business executions.</p>
                 </div>
                 <div class="card">
-                    <h3>Measurable Outcomes</h3>
-                    <p>Targeting up to 80%+ cross-functional structural task optimization velocity with sustained production operations exceeding 95%+ precision boundaries.</p>
+                    <h3>Operationalized Yield Focus</h3>
+                    <p>Delivering measurable results, including over 80% acceleration in automated cross-functional compliance task parsing and accuracy ceilings above 95%.</p>
                 </div>
             </div>
         </section>
 
-        <section id="premiere">
-            <div class="section-title"><i class="fab fa-youtube"></i> Upcoming Architecture Walkthrough & Live Demo Launch</div>
+        <section id="streams">
+            <div class="section-title"><i class="fab fa-youtube"></i> AIinovateHub Production AI Architecture Streams</div>
+            
             <div class="broadcast-panel">
-                <span class="broadcast-badge">AIINOVATEHUB STREAM RELEASING WEDNESDAY, MAY 27, 2026 @ 9:30 AM ET</span>
-                <h2 style="color:#ffffff; margin-bottom:0.5rem;">CareerAgent-AI: Production-Grade Agentic AI OS</h2>
-                <p style="color:var(--text-muted); margin-bottom:1.5rem;">A comprehensive 1-hour 45-minute architectural exploration blueprint uncovering multi-agent orchestration deployment patterns, memory networks, and systemic error-mitigation paths.</p>
+                <span class="broadcast-badge">EXCLUSIVE MASTERCLASS PREMIERE: MAY 27, 2026 @ 9:30 AM ET</span>
+                <h2 style="color:#ffffff; margin-bottom:0.5rem; font-weight: 800;">CareerAgent-AI: 10-Layer Production Agentic OS</h2>
+                <p style="color:var(--text-muted); margin-bottom:1.5rem;">An exhaustive 1-hour 45-minute live platform breakdown mapping stateful multi-agent systems, error-budget boundaries, loop containment models, and automated deployment layers.</p>
                 
                 <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=AIINOVATEHUB" title="AIinovateHub Stream Window" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/tYURcU6sdow" title="CareerAgent-AI 10-Layer Masterclass" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="video-grid-showcase">
+                
+                <div class="video-card-wrapper">
+                    <div>
+                        <h3>CareerAgent-AI Platform Demo | Live Production Workflow</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/M77sUSDiPDs" title="CareerAgent-AI Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-meta-tag">RUNTIME IDENTIFIER: demo_workflow.sh</div>
                 </div>
 
-                <div class="grid-2" style="margin-top:1.5rem;">
+                <div class="video-card-wrapper">
                     <div>
-                        <h4 style="color:#ffffff; margin-bottom:0.5rem;">Demonstrated Capabilities:</h4>
-                        <ul style="color:var(--text-muted); padding-left:1.25rem;">
-                            <li>Orchestrating 20+ specialized autonomous domain workers</li>
-                            <li>PostgreSQL transaction log auditing (~20ms checkpointing)</li>
-                            <li>Integrated Presidio data scrubbing meshes</li>
-                        </ul>
+                        <h3>Agentic AI for Procurement (ProcureMind OS) | Beyond POC to Production</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/vEsx3yOEmuo" title="Agentic AI for Procurement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
-                    <div>
-                        <h4 style="color:#ffffff; margin-bottom:0.5rem;">Core Technology Matrix:</h4>
-                        <p style="color:var(--accent-cyan); font-family:monospace; font-size:0.9rem;">LangGraph // CrewAI // Python // FastAPI // Docker // Kubernetes // Oracle Cloud Infrastructure // DuckDNS</p>
-                    </div>
+                    <div class="video-meta-tag">RUNTIME IDENTIFIER: procure_mind_ops.sh</div>
                 </div>
+
+                <div class="video-card-wrapper">
+                    <div>
+                        <h3>Enterprise AI Architecture for Supply Chain Intelligence Networks</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/689c0CfjpQI" title="Supply Chain Intelligence Architecture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-meta-tag">RUNTIME IDENTIFIER: supply_chain_core.sh</div>
+                </div>
+
+                <div class="video-card-wrapper">
+                    <div>
+                        <h3>AI Health Coach Architecture: Safe, Explainable Clinical Decision Support</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/xI3dF-FLsy8" title="AI Health Coach Architecture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-meta-tag">RUNTIME IDENTIFIER: health_coach_cdss.sh</div>
+                </div>
+
+                <div class="video-card-wrapper">
+                    <div>
+                        <h3>OmniBank Agents Architecture: AI Agent OS for Regulated Banking Networks</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/nMdX96puPxM" title="OmniBank Agent OS Architecture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-meta-tag">RUNTIME IDENTIFIER: omnibank_agents_sys.sh</div>
+                </div>
+
+                <div class="video-card-wrapper">
+                    <div>
+                        <h3>Agentic Legal & Compliance Command Center: Hardened Enterprise Runtime</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/yg_2u1eij10" title="Legal & Compliance Architecture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-meta-tag">RUNTIME IDENTIFIER: legal_compliance_mesh.sh</div>
+                </div>
+
             </div>
         </section>
 
         <section id="architecture">
-            <div class="section-title"><i class="fas fa-layer-group"></i> Production Topography Mapping</div>
+            <div class="section-title"><i class="fas fa-layer-group"></i> CareerAgent-AI: 10-Layer System Topography</div>
             <div class="blueprint-shell">
                 <div class="blueprint-header">
                     <span>careeragent_os_architecture_manifest.yaml</span>
-                    <span>RUNTIME ENGINE V1.4</span>
+                    <span>ENGINE VERSION: v1.4</span>
                 </div>
                 <div class="layer-node">
                     <div class="layer-node-meta">LAYERS 1-3 // DATA CONTEXT FABRIC</div>
-                    <div class="layer-node-title">Semantic Parsing & Vector Transformation Base</div>
-                    <p style="color:var(--text-muted); font-size:0.85rem;">GraphRAG execution pipelines synchronizing connected data models via Neo4j and high-availability clustered Qdrant backends.</p>
+                    <div class="layer-node-title">Semantic Parsing & Connected Vector Map Layer</div>
+                    <p style="color:var(--text-muted); font-size:0.85rem;">GraphRAG execution pipelines matching complex unstructured parameters using Neo4j and scalable clustered Qdrant backends.</p>
                 </div>
                 <div class="layer-node">
-                    <div class="layer-node-meta">LAYERS 4-6 // COGNITIVE AGENT ENGINE</div>
-                    <div class="layer-node-title">Graph-Driven State Orchestration & State Locks</div>
-                    <p style="color:var(--text-muted); font-size:0.85rem;">Deterministic routing pathways and dynamic loop barriers managed via stateful LangGraph engines.</p>
+                    <div class="layer-node-meta">LAYERS 4-6 // COGNITIVE DEPLOYMENT ORCHESTRATION</div>
+                    <div class="layer-node-title">Graph-Driven Stateful Engine Routing & Boundary Locks</div>
+                    <p style="color:var(--text-muted); font-size:0.85rem;">Multi-agent state machines managing cyclic error mitigation and task tracking via advanced LangGraph engines.</p>
                 </div>
                 <div class="layer-node">
-                    <div class="layer-node-meta">LAYERS 7-8 // COMPLIANCE CONTROL GATEWAY</div>
-                    <div class="layer-node-title">Policy-As-Code Guardrails & Human-In-The-Loop Framework</div>
-                    <p style="color:var(--text-muted); font-size:0.85rem;">Real-time execution governance using automated OPA rulesets, Presidio parsing, and approval gateways.</p>
+                    <div class="layer-node-meta">LAYERS 7-8 // GOVERNANCE MESH GUARDRAILS</div>
+                    <div class="layer-node-title">Policy-As-Code Verification Engines & Human Gateway Approvals</div>
+                    <p style="color:var(--text-muted); font-size:0.85rem;">Real-time execution governance via automated OPA constraints, Microsoft Presidio filtering patterns, and active user verification checkpoints.</p>
                 </div>
                 <div class="layer-node upper">
-                    <div class="layer-node-meta">LAYERS 9-10 // CLUSTER RUNTIME STORAGE</div>
-                    <div class="layer-node-title">Persistent Transaction Logging & Nginx Reverse Proxy Route Mesh</div>
-                    <p style="color:var(--text-muted); font-size:0.85rem;">Hardened instance clusters provisioning isolated micro-services with sub-20ms transaction state logging.</p>
+                    <div class="layer-node-meta">LAYERS 9-10 // CLUSTER PERSISTENCE INTERFACE</div>
+                    <div class="layer-node-title">Hardened PostgreSQL Ledger Tracking & Nginx Edge Reverse Proxy</div>
+                    <p style="color:var(--text-muted); font-size:0.85rem;">Sub-20ms transactional database logging hosted via distributed micro-services behind isolated proxy layers.</p>
                 </div>
             </div>
         </section>
 
         <section id="usecases">
-            <div class="section-title"><i class="fas fa-industry"></i> Enterprise Domain Focus Areas & Metrics</div>
+            <div class="section-title"><i class="fas fa-cubes"></i> Project Profiles & Scalability Metrics</div>
             <div class="grid-2">
                 <div class="card">
-                    <h3 style="color:var(--accent-cyan);"><i class="fas fa-briefcase"></i> Project Profile: CareerAgent-AI</h3>
-                    <p><strong>Challenge:</strong> Scalable personalized career strategy routing bypassing unstable unmonitored processing paths.</p>
-                    <p><strong>Solution:</strong> Developed multi-agent workflows managing execution patterns via stateful LangGraph routing matrices with continuous context validation.</p>
+                    <h3 style="color:var(--accent-cyan);"><i class="fas fa-briefcase"></i> Project System: CareerAgent-AI</h3>
+                    <p><strong>Challenge:</strong> Orchestrating real-time, highly tailored career strategy processing without hitting token overflow bottlenecks or infinite agent loop states.</p>
+                    <p><strong>Solution:</strong> Constructed a 10-layer specialized agent operating network using state-locked conditional routing paths with integrated LangSmith audit logging tracks.</p>
                     <ul style="margin-top:0.5rem;">
-                        <li>1,000+ active sessions routed successfully</li>
-                        <li>30% faster matching path convergence</li>
-                        <li>Verified execution accuracy benchmark exceeding 95%+</li>
+                        <li>1,000+ isolated user runtimes executed seamlessly</li>
+                        <li>30% reduction in state-matching route latency</li>
+                        <li>Validated deployment accuracy benchmark exceeding 95%+</li>
                     </ul>
                 </div>
                 <div class="card">
-                    <h3 style="color:var(--accent-purple);"><i class="fas fa-shield-halved"></i> Sector Solutions & Guardrails</h3>
-                    <p><strong>Healthcare:</strong> Explainable clinical validation networks, secure treatment data parsing blueprints, and medical diagnostic indexing optimization metrics.</p>
-                    <p><strong>Financial Services:</strong> Automated KYC matching checks, structural anti-fraud processing patterns, and cross-border regulatory verification auditing layers.</p>
-                    <p><strong>Legal Operations:</strong> High-throughput structured document contract parsing, automated baseline compliance checking, and cryptographically sound transaction logs.</p>
+                    <h3 style="color:var(--accent-purple);"><i class="fas fa-shield-halved"></i> Specialized Sector Runtimes</h3>
+                    <p><strong>Healthcare Systems:</strong> Medically traceable decision frameworks, privacy-preserving synthesis structures, and highly optimized medical image dataset modeling parameters.</p>
+                    <p><strong>Regulated Banking:</strong> Enterprise anti-money laundering automated audits, transaction fraud heuristics tracking, and structural multi-tenant PII data sanitization.</p>
+                    <p><strong>Legal Operations:</strong> Contract parsing abstraction mapping, automated legislative requirement parsing, and immutably locked operational compliance trails.</p>
                 </div>
             </div>
         </section>
 
         <section id="publications">
-            <div class="section-title"><i class="fas fa-file-lines"></i> Complete Peer-Reviewed DOI Whitepaper Inventory</div>
+            <div class="section-title"><i class="fas fa-file-contract"></i> Complete Peer-Reviewed DOI Whitepaper Inventory</div>
             
             <div class="pub-entry">
                 <a href="https://doi.org/10.5281/zenodo.20320123" target="_blank" class="pub-title">1. Agentic Legal & Compliance Command Center: Production AI Flight Computer for Governed Enterprise Legal Workflows (2026)</a>
-                <div class="pub-details"><strong>Focus Matrix:</strong> GraphRAG, C-RAG, Self-RAG pipelines, Neo4j infrastructure, Open Policy Agent (OPA) integration, and human-in-the-loop authorization gates. Affiliated with Clark University and logged under ORCID parameters.</div>
-                <div class="pub-doi">DOI: 10.5281/zenodo.20320123 // Zenodo Publisher</div>
+                <div class="pub-details"><strong>Structural Focus:</strong> Deep integration of GraphRAG, Corrective-RAG (C-RAG), and Self-RAG pipelines with Neo4j. Features Open Policy Agent (OPA) policy-as-code engines and human-in-the-loop validation checkpoints. Linked via university catalog and ORCID parameters.</div>
+                <div class="pub-doi">DOI: 10.5281/zenodo.20320123 // Zenodo CERN Repository</div>
             </div>
 
             <div class="pub-entry">
                 <a href="https://doi.org/10.5281/zenodo.18408780" target="_blank" class="pub-title">2. Autonomous Orchestration: Multi-Agent Framework for Enterprise Supply Chain Intelligence (2026)</a>
-                <div class="pub-details"><strong>Focus Matrix:</strong> Tri-engine operational architectures, probabilistic analytical vector casting, constraint-aware continuous execution systems, and agentic business automation intelligence nodes.</div>
-                <div class="pub-doi">DOI: 10.5281/zenodo.18408780 // Zenodo Publisher</div>
+                <div class="pub-details"><strong>Structural Focus:</strong> Tri-engine operational state control topologies, non-deterministic probabilistic projection casting models, boundary-aware continuous scheduling systems, and specialized agentic decision intelligence structures.</div>
+                <div class="pub-doi">DOI: 10.5281/zenodo.18408780 // Zenodo CERN Repository</div>
             </div>
 
             <div class="pub-entry">
                 <a href="https://doi.org/10.5281/zenodo.18423410" target="_blank" class="pub-title">3. OmniBank Agents Architecture v1.1: AI Agent OS for Regulated Banking (2026)</a>
-                <div class="pub-details"><strong>Focus Matrix:</strong> Bank-grade workflow automation matrices, structural automated KYC tracking, transaction fraud validation algorithms, AML logging layers, lending pipeline evaluations, and automated PII/PCI security boundaries.</div>
-                <div class="pub-doi">DOI: 10.5281/zenodo.18423410 // Zenodo Publisher</div>
+                <div class="pub-details"><strong>Structural Focus:</strong> Hardened bank-grade identity processing meshes, automated client validation routing, continuous fraud anomaly detection, AML transaction logs, and rigid financial PII/PCI security boundaries.</div>
+                <div class="pub-doi">DOI: 10.5281/zenodo.18423410 // Zenodo CERN Repository</div>
             </div>
 
             <div class="pub-entry">
                 <a href="https://doi.org/10.5281/zenodo.18395424" target="_blank" class="pub-title">4. AI Health Coach Architecture: Safe, Explainable Clinical Decision Support (2026)</a>
-                <div class="pub-details"><strong>Focus Matrix:</strong> Comprehensive CDSS architecture engineering, regulatory medical deployment protocols, safety bounding parameters, and transparent rationale tracing layers.</div>
-                <div class="pub-doi">DOI: 10.5281/zenodo.18395424 // Zenodo Publisher</div>
+                <div class="pub-details"><strong>Structural Focus:</strong> Medical CDSS platform engineering patterns, regulatory compliance frameworks, explainable diagnostic audit tracking pathways, and safety-bounded validation constraints.</div>
+                <div class="pub-doi">DOI: 10.5281/zenodo.18395424 // Zenodo CERN Repository</div>
             </div>
 
             <div class="pub-entry">
                 <span class="pub-title" style="cursor: default;">5. CareerAgent-AI Architecture: Production-Grade Agentic OS for Career Automation (2026)</span>
-                <div class="pub-details"><strong>Focus Matrix:</strong> Exhaustive engineering blueprint detailing our 10-layer operational architecture framework, 20+ specialized agent loop profiles, and state lock workflows powered natively by LangGraph engine routing.</div>
-                <div class="pub-doi">DOI: [Zenodo 6th Series Architecture Tracking Layer - Assignment Pending]</div>
+                <div class="pub-details"><strong>Structural Focus:</strong> Multi-agent platform blueprint mapping out the 10-layer operational system configuration parameters, 20+ autonomous domain workers, and cyclic routing graphs powered natively by LangGraph engines.</div>
+                <div class="pub-doi">DOI: [Zenodo 6th Whitepaper Series Architecture Track - Assignment Pending]</div>
             </div>
 
             <div class="pub-entry">
                 <a href="https://doi.org/10.21227/csb2-7x07" target="_blank" class="pub-title">6. BTXRD-2024 Augmented Bone Tumor Segmentation & Triage Dataset</a>
-                <div class="pub-details"><strong>Impact Metrics:</strong> Over 13,000+ structural file downloads, 1,739 analytical reads, top-ranking organic Google search position visibility, and 5-star validation rating aggregated across 452 developer evaluations. Focused on medical imaging processing workflows.</div>
-                <div class="pub-doi">DOI: 10.21227/csb2-7x07 // IEEE DataPort Publisher</div>
+                <div class="pub-details"><strong>Impact Footprint:</strong> Over 13,000+ direct file downloads, 1,739 analytical reads, organic page-1 Google Search visibility ranking, and a 5-star quality rating across 452 developer assessments. Specialized in medical image segmentation pipelines.</div>
+                <div class="pub-doi">DOI: 10.21227/csb2-7x07 // IEEE DataPort Repository</div>
             </div>
         </section>
 
@@ -547,23 +630,23 @@
                 <div class="card" style="border-left: 4px solid var(--accent-purple);">
                     <h3 style="margin-bottom:0.25rem;">Master of Science in Information Technology (MSIT)</h3>
                     <p style="color:var(--accent-purple); font-weight:600; font-size:0.9rem; margin-bottom:0.5rem;">Clark University (Worcester, MA, USA) — Graduated May 18, 2026</p>
-                    <p>Concentration target path in <strong>Healthcare Technology Systems</strong>. Academic coursework: Cloud Computing Infrastructures, Distributed Enterprise Architectures, Highly Available Secure Database Engineering, and Clinical Information Infrastructure Rulesets.</p>
+                    <p>Concentration in <strong>Healthcare Technology Systems</strong>. Core Specializations: Distributed Enterprise Infrastructure, High-Availability Secure Datastores, Cloud Architecture Engineering, and Clinical Compliance Matrix Routing.</p>
                 </div>
                 <div class="card" style="border-left: 4px solid var(--accent-cyan);">
                     <h3 style="margin-bottom:0.25rem;">Master of Data Science (Global)</h3>
                     <p style="color:var(--accent-cyan); font-weight:600; font-size:0.9rem; margin-bottom:0.5rem;">Deakin University (Victoria, Australia)</p>
-                    <p>Advanced study tracking clusters focused on mass-scale cluster processing architectures, mathematical statistical distribution validation, and scalable algorithmic engine builds.</p>
+                    <p>Advanced studies tracking mass-scale high-throughput cluster distribution architectures, mathematical analytical validation tracking, and scalable algorithmic engine builds.</p>
                 </div>
                 <div class="card">
                     <h3>Post Graduate Program (PGP) in AI & ML</h3>
                     <p style="color:var(--accent-green); font-weight:600; font-size:0.9rem; margin-bottom:0.5rem;">University of Texas at Austin (McCombs School of Business)</p>
-                    <p>Rigorous validation covering structural deep optimization networks, hyperparameter parsing tracks, predictive modeling, and automated system engineering rulesets.</p>
+                    <p>Rigorous mathematical validation paths detailing deep neural networks optimization layers, hyperparameter tuning structures, and cognitive automated engineering patterns.</p>
                 </div>
                 <div class="card">
-                    <h3>Core Technical Foundations</h3>
+                    <h3>Core Technical Frameworks</h3>
                     <p style="color:var(--text-muted); line-height:1.8;">
-                        • <strong>Master of Computer Applications (MCA)</strong> — Advanced algorithmic design patterns and discrete software engineering execution boundaries.<br>
-                        • <strong>Master of Business Administration (MBA)</strong> — Strategic resource scaling protocols, technology deployment valuation metrics, and operations management.
+                        • <strong>Master of Computer Applications (MCA)</strong> — Sophisticated discrete software design boundaries and algorithmic complexity optimization models.<br>
+                        • <strong>Master of Business Administration (MBA)</strong> — Strategic resource scaling systems, digital transformation lifecycle metrics, and technology valuation parameters.
                     </p>
                 </div>
             </div>
@@ -574,7 +657,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2026 Ganesh Prasad Bhandari. All rights reserved. Hardened Engine Blueprint Framework Ecosystem v1.4.</p>
-            <p style="font-family: monospace; color: var(--accent-cyan); margin-top: 0.5rem; font-size: 0.75rem;">COMPRESSED STACK DESIGNS // COMPILED AND RENDERED VIA NATIVE DESCRIPTOR FABRIC</p>
+            <p style="font-family: monospace; color: var(--accent-cyan); margin-top: 0.5rem; font-size: 0.75rem;">COMPILED & VERIFIED VIA NATIVE STRUCTURAL EXECUTION CHANNELS</p>
         </div>
     </footer>
 
